@@ -21,8 +21,8 @@ if st.button("추천 보기"):
     recommendations = get_recommendations(places, region)
 
     for place in recommendations:
-        st.write(place["이름"])
-        st.write(place["지역"])
-        st.write(place["예산"])
-        st.write(place["한줄설명"])
+        st.write("장소이름: ", place["이름"])
+        st.write("지역: ", place["지역"])
+        st.write("경비: ", place["예산"])
+        st.write("주요사항: ", place["한줄설명"])
         st.write("---")
