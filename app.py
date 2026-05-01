@@ -15,7 +15,7 @@ if uploaded_file is not None:
     st.subheader("1. 전체 장소 데이터")
     st.dataframe(df)
 
- region_count = df["지역"].value_counts()
+    region_count = df["지역"].value_counts()
 
-st.subheader("지역별 장소 개수")
-st.bar_chart(region_count)
+    st.subheader("지역별 장소 개수")
+    st.bar_chart(region_count)
