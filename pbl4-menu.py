@@ -76,7 +76,7 @@ st.sidebar.title("메뉴")
 
 menu = st.sidebar.radio(
     "원하는 기능을 선택하세요",
-    ["앱 설명", "데이터 확인", "조건 검색", "데이터 시각화"]
+    ["홈", "데이터 확인", "조건 검색", "데이터 시각화"]
 )
 
 uploaded_file = st.sidebar.file_uploader(
@@ -84,7 +84,7 @@ uploaded_file = st.sidebar.file_uploader(
     type=["xlsx"]
 )
 
-if menu == "앱 설명":
+if menu == "홈":
     intro_page()
 
 else:
