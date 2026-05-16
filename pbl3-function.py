@@ -5,7 +5,7 @@ def load_data(uploaded_file):
   df = pd.read_excel(uploaded_file)
   return df
 
-def show_data(df)
+def show_data(df):
   st.subheader("업로드한 장소 목록")
   st.dataframe(df)
 
@@ -19,7 +19,6 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
   df = load_data(uploaded_file) # 함수 호출
- 
   show_data(df)
   
 else:
