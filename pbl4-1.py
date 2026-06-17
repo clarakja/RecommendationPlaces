@@ -2,11 +2,11 @@
 # 강원생활도우미앱 3.1 — 가성비 추천 기능 확장본
 #
 # [확장 문서화]  (SDD 6단계 결과)
-# - 더한 것   : add_value_score(), top_value() 함수 + '추천 검색'에 '가성비 추천 보기'
-# - 건드리지 않은 것 : load_data, join_data, show_original_data, show_joined_data,
+# - 추가   : add_value_score(), top_value() 함수 + '추천 검색'에 '가성비 추천 보기'
+# - 유지 : load_data, join_data, show_original_data, show_joined_data,
 #                      search_recommendations의 기존 검색/경고, show_chart
 # - 회귀 결과 : 기존 검색 결과는 그대로 (가성비는 결과를 '복사'해서 계산 → 원본 불변)
-# - 접점     : 기존 검색 결과 DataFrame을 받아, '평점'·'예산' 열로 가성비를 매긴다
+# - 인터페이스 : 기존 검색 결과 DataFrame을 받아, '평점'·'예산' 열로 가성비를 매긴다
 # =====================================================================
 
 import streamlit as st
